@@ -1,0 +1,11 @@
+# IDE #
+.idea/*
+__pycache__/
+
+
+# Compiled source #
+__init__.py
+*.pyc
+
+
+# Sensitive data #

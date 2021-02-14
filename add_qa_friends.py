@@ -6,7 +6,7 @@ from add_qa_friends.pages.login_page import LoginPage
 from add_qa_friends.pages.main_page import MainPage
 from add_qa_friends.pages.base_page import BasePage
 from add_qa_friends.pages.add_friend_page import AddFriendPage
-from add_qa_friends.parameters import BASE_URL, LOGIN_ENDPOINT, SCREEN_RESOLUTION
+from add_qa_friends.parameters import BASE_URL, LOGIN_ENDPOINT
 
 
 class AddQaFriends(unittest.TestCase):
@@ -23,7 +23,6 @@ class AddQaFriends(unittest.TestCase):
         self.driver.get(f"{BASE_URL}{LOGIN_ENDPOINT}")
 
     def test_add_qa_friends(self):
-        # self.base_page.resize_full_page(SCREEN_RESOLUTION)
         self.login_page.login()
         self.main_page.find_friends()
         self.add_friend_page.add_all_friends()

@@ -1,6 +1,6 @@
 # Add business friends
 
-## Script which halep you add new business friends on Linkedin
+## Script which help you add new business friends on Linkedin
 
 ### Before your first run a test you should:
 
